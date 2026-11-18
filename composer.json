@@ -1,0 +1,46 @@
+{
+    "name": "haidev6199/yii2-payswitch",
+    "description": "Yii2 client for the PaySwitch internal HTTP API (merchant, reader, MID/TID management).",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["yii2", "payswitch", "payment", "pos", "sdk"],
+    "authors": [
+        {
+            "name": "haidev6199"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "yiisoft/yii2": "^2.0.14",
+        "yiisoft/yii2-httpclient": "^2.0.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Haidev6199\\PaySwitch\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Haidev6199\\PaySwitch\\Tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
